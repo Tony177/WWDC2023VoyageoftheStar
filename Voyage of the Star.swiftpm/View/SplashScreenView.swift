@@ -17,9 +17,10 @@ struct SplashScreenView: View {
             .ignoresSafeArea()
             .hueRotation(.degrees(hueDegree))
             Text("Explore the voyage of the star!")
+                .foregroundColor(.white)
                 .font(.system(size: 40))
                 .bold()
-                .shadow(color:.white,radius: 4)
+                .shadow(color:.black,radius: 4)
         }
         .onAppear(){
             withAnimation(.easeIn(duration: 2.0)) {

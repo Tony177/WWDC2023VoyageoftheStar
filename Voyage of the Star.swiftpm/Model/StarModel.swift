@@ -74,13 +74,13 @@ let starList : [Star] =
         ),
         Star(
             id: 4,
-            nameEng: "Beta Centauri",
+            nameEng: "Hadar",
             nameLat: "Beta Centauri",
             age: 14.1,
             distance: 390.0,
             appMagnitude: 0.61,
             desc: "",
-            imageName: "betacentauri"
+            imageName: "hadar"
         ),
         Star(
             id: 5,
