@@ -46,9 +46,9 @@ struct StarView: View {
                         VStack(alignment:.leading){
                             Text("Name: \(star.nameEng)").font(.title)
                             Text("Latin Name: \(star.nameLat)").font(.title3)
-                            Text("Distance: \(star.distance.removeZerosFromEnd())")
+                            Text("Distance: \(star.distance.removeZerosFromEnd()) light years")
                             Text("Apparent Magnitude: \(star.appMagnitude.removeZerosFromEnd())")
-                            Text("Age: \(star.age.removeZerosFromEnd())")
+                            Text("Age: \(star.age.removeZerosFromEnd()) milion of years")
                             Spacer().frame(height: 30)
                             Text(star.desc)
                         }.foregroundColor(.white).frame(maxWidth: geo.size.width*0.7)

@@ -11,9 +11,9 @@ struct StartView: View {
     @State var splashScreenOn : Bool = true
     var body: some View {
         if (splashScreenOn) {
-            SplashScreenView(splashScreenOn: $splashScreenOn)
+            SplashScreenView(splashScreenOn: $splashScreenOn).previewInterfaceOrientation(.landscapeRight)
         } else {
-            MainView()
+            MainView().previewInterfaceOrientation(.landscapeRight)
         }
     }
 }
