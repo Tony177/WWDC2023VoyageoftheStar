@@ -49,17 +49,17 @@ let starList : [Star] =
             age: 4600.0,
             distance: 0.0,
             appMagnitude: -26.74,
-            desc: "You can pass the same kinds of animations to the withAnimation function that you passed to the animation(_:value:) modifier.",
+            desc: "The Sun is the only star in our solar system. It is the center of our solar system, and its gravity holds the solar system together.\nThe Sun is about 100 times wider than Earth and about 10 times wider than Jupiter, the biggest planet. If the Sun were as tall as a typical front door, Earth would be about the size of a nickel.",
             imageName: "sun"
         ),
         Star(
             id: 2,
             nameEng: "Sirius",
-            nameLat: "Sirius",
+            nameLat: "Alpha Canis Majoris",
             age: 242.0,
             distance: 8.6,
             appMagnitude: -1.46,
-            desc: "",
+            desc: "Sirius is colloquially known as the 'Dog Star', reflecting its prominence in its constellation, Canis Major (the Greater Dog).\nSirius is the brightest star in the night sky, almost twice as bright as the second-brightest star, Canopus. From Earth, Sirius always appears dimmer than Jupiter and Venus and is visible from almost everywhere on Earth",
             imageName: "sirius"
         ),
         Star(

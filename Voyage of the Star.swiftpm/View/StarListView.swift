@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct StarListView: View {
-    
     @State var orderBy : Int = 1
     @Binding var starClicked : Star
     @Binding var starChoosen : Bool
     @Binding var scaleEffectOn : Bool
-    let sizeLimitWidth : CGFloat = 900
+    @Binding var offsetValue : CGFloat
     var starOrdered : [Star] {
         switch orderBy {
         case 0:
@@ -72,7 +71,7 @@ struct StarListView: View {
                                 .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .xxxLarge)
                             Spacer()
                             NavigationLink {
-                                EmptyView()
+                                InfoView()
                             } label: {
                                 Image(systemName: "info.circle").dynamicTypeSize(.accessibility2)
                             }
@@ -96,8 +95,24 @@ struct StarListView: View {
                         .frame(width: 1,height: 1)
                         .scaleEffect(scaleEffectOn ? 1500 : 0.1)
                         .blendMode(.screen)
+                    Image("rocket")
+                    .resizable(resizingMode: .stretch)
+                    .ignoresSafeArea()
+                    .offset(x: offsetValue)
+                }.onAppear(){
+                    if(offsetValue == 0.0){
+                        withAnimation(.linear(duration: 2)) {
+                            offsetValue = geo.size.width + 100
+                        }
+                    }
                 }
             }
         }
+    }
+}
+
+struct StarListView_Previews: PreviewProvider {
+    static var previews: some View {
+        StarListView(starClicked: Binding.constant(starList.first!), starChoosen: Binding.constant(true), scaleEffectOn: Binding.constant(false),offsetValue: Binding.constant(10000.0)).previewInterfaceOrientation(.landscapeRight)
     }
 }
