@@ -109,9 +109,3 @@ struct StarListView: View {
         }
     }
 }
-
-struct StarListView_Previews: PreviewProvider {
-    static var previews: some View {
-        StarListView(starClicked: Binding.constant(starList.first!), starChoosen: Binding.constant(true), scaleEffectOn: Binding.constant(false),offsetValue: Binding.constant(10000.0)).previewInterfaceOrientation(.landscapeRight)
-    }
-}

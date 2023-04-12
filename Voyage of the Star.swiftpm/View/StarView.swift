@@ -50,20 +50,13 @@ struct StarView: View {
                             Spacer().frame(height: 30)
                             Text(star.desc)
                         }.foregroundColor(.white)
-                        .frame(maxWidth: geo.size.width*0.7)
-                        .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
+                            .frame(maxWidth: geo.size.width*0.7)
+                            .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
                         
                     }
                     Spacer()
-                    
                 }
             }
         }
-    }
-}
-
-struct StarView_Previews: PreviewProvider {
-    static var previews: some View {
-        StarView(star: Binding.constant(starList[0]), starChoosen: Binding.constant(true), scaleEffectOn:  Binding.constant(false)).previewInterfaceOrientation(.landscapeRight)
     }
 }

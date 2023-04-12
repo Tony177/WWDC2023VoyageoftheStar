@@ -31,9 +31,3 @@ struct InfoView: View {
         }
     }
 }
-
-struct InfoViewView_Previews: PreviewProvider {
-    static var previews: some View {
-        InfoView().previewInterfaceOrientation(.landscapeRight)
-    }
-}

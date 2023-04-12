@@ -22,9 +22,3 @@ struct MainView: View {
         }
     }
 }
-
-struct MainViewProvider_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView().previewInterfaceOrientation(.landscapeRight)
-    }
-}
