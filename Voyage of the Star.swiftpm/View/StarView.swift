@@ -30,8 +30,7 @@ struct StarView: View {
                             HStack{
                                 Image(systemName: "chevron.left")
                                 Text("Back")
-                            }.font(.title)
-                            
+                            }.dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
                         }.buttonStyle(.borderless)
                         Spacer()
                     }
@@ -39,20 +38,20 @@ struct StarView: View {
                     HStack{
                         Image(star.imageName)
                             .resizable()
-                            .frame(width: geo.size.width > sizeLimitWidth ? 400 : 150,height: geo.size.width > sizeLimitWidth ? 400 : 150)
+                            .frame(width: geo.size.width > sizeLimitWidth ? 350 : 150,height: geo.size.width > sizeLimitWidth ? 350 : 150)
                             .blendMode(.screen)
                         Spacer()
                         VStack(alignment:.leading){
-                            Text("Name: \(star.nameEng)").font(.title)
-                            Text("Latin Name: \(star.nameLat)").font(.title3)
-                            Text("Distance: \(star.distance.formatted()) light years")
-                            Text("Apparent Magnitude: \(star.appMagnitude.formatted())")
+                            Text("Name: \(star.nameEng)").dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility4 : .xxxLarge)
+                            Text("Latin Name: \(star.nameLat)")
+                            Text("Distance: \(star.distance.removeZerosFromEnd()) light years")
+                            Text("Apparent Magnitude: \(star.appMagnitude.removeZerosFromEnd())")
                             Text("Age: \(star.age.formatAge()) years")
                             Spacer().frame(height: 30)
                             Text(star.desc)
                         }.foregroundColor(.white)
                         .frame(maxWidth: geo.size.width*0.7)
-                        .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .xxxLarge)
+                        .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
                         
                     }
                     Spacer()

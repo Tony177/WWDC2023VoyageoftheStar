@@ -69,7 +69,7 @@ let starList : [Star] =
             age: 25.0,
             distance: 310.0,
             appMagnitude: -0.74,
-            desc: "",
+            desc: "The name has two possible derivations:\n1.The star was given the name of a ship's pilot from another Greek legend: Canopus, pilot of Menelaus' ship on his quest to retrieve Helen of Troy after she was taken by Paris.\n2. A ruined ancient Egyptian port named Canopus lies near the mouth of the Nile, site of the Battle of the Nile.",
             imageName: "canopus"
         ),
         Star(
@@ -79,7 +79,7 @@ let starList : [Star] =
             age: 14.1,
             distance: 390.0,
             appMagnitude: 0.61,
-            desc: "",
+            desc: "It bore the traditional names Hadar and Agena. Hadar comes from the Arabic حضار (the root's meaning is 'to be present' or 'on the ground' or 'settled, civilized area'), while the name Agena is thought to be derived from the Latin genua, meaning 'knees', from the star's position on the left knee of the centaur depicted in the constellation Centaurus",
             imageName: "hadar"
         ),
         Star(
@@ -89,7 +89,7 @@ let starList : [Star] =
             age: 100.0,
             distance: 16.7,
             appMagnitude: 0.76,
-            desc: "",
+            desc: "The traditional name Altair (Latinised to Alpha Aquilae) has been used since medieval times.\nIt is an abbreviation of the Arabic phrase النسر الطائر Al-Nisr Al-Ta'ir, 'the flying eagle'.",
             imageName: "altair"
         ),
         Star(
@@ -99,7 +99,7 @@ let starList : [Star] =
             age: 724.0,
             distance: 33.7,
             appMagnitude: 1.16,
-            desc: "",
+            desc: "The traditional name Pollux refers to the twins Castor and Pollux in Greek and Roman mythology.\nIn Chinese, 北河 (Běi Hé), meaning North River, refers to an asterism consisting of Pollux, ρ Geminorum, and Castor.[26] Consequently, Pollux itself is known as 北河三 (Běi Hé sān, English: the Third Star of North River.)",
             imageName: "pollux"
         ),
         Star(
@@ -109,7 +109,7 @@ let starList : [Star] =
             age: 455.0,
             distance: 25.0,
             appMagnitude: 0.03,
-            desc: "",
+            desc: "The name is believed to be derived from the Arabic term Al Nesr al Waki النسر الواقع which appeared in the Al Achsasi al Mouakket star catalogue and was translated into Latin as Vultur Cadens, 'the falling eagle/vulture'.\nIn Zoroastrianism, Vega was sometimes associated with Vanant, a minor divinity whose name means 'conqueror'",
             imageName: "vega"
         ),
         Star(
@@ -119,7 +119,7 @@ let starList : [Star] =
             age: 12400.0,
             distance: 101.2,
             appMagnitude: 3.3,
-            desc: "",
+            desc: "It bore the traditional name Edasich, derived from the Arabic Al Ḍhiba' of Ulug Beg and the Dresden Globe, or Al dhīlī 'Male hyena' by Kazwini, with Eldsich being recorded in the Century Cyclopedia.\nIn Chinese the name for Iota Draconis is 紫微左垣一 (Zǐ Wēi Zuǒ Yuán yī, English: the First Star of Left Wall of Purple Forbidden Enclosure.)",
             imageName: "edasich"
         ),
         Star(
@@ -129,7 +129,7 @@ let starList : [Star] =
             age: 25.2,
             distance: 250.0,
             appMagnitude: 1.64,
-            desc: "",
+            desc: "The traditional name Bellatrix is from the Latin bellātrix 'female warrior'.\nTo the Inuit, the appearance of Betelgeuse and Bellatrix high in the southern sky after sunset marked the beginning of spring and lengthening days in late February and early March.\nThe Wardaman people of northern Australia know Bellatrix as Banjan, the sparkling pigment used in ceremonies conducted by Rigel the Red Kangaroo Leader in a songline when Orion is high in the sky.",
             imageName: "bellatrix"
         ),
         Star(
@@ -139,7 +139,7 @@ let starList : [Star] =
             age: 33.0,
             distance: 182.0,
             appMagnitude: 3.97,
-            desc: "",
+            desc: "The star bore the traditional names Rukbat and Alrami, derived from the Arabic rukbat al-rāmī 'the knee of the archer'.\nIn Chinese the name for Alpha Sagittarii is 天淵三 (Tiān Yuān sān, English: the Third Star of Celestial Spring.)",
             imageName: "rukbat"
         ),
         Star(
@@ -149,7 +149,7 @@ let starList : [Star] =
             age: 12.5,
             distance: 250.0,
             appMagnitude: 0.97,
-            desc: "",
+            desc: "The name is derived from the Latin spīca virginis 'the virgin's ear of [wheat] grain'. It was also anglicized as Virgin's Spike.\nIn Chinese the name for Spica is 角宿一 (Jiǎo Sù yī, English: the First Star of Horn)\nIn Hindu astronomy, Spica corresponds to the Nakshatra Chitrā.",
             imageName: "spica"
         )
     ]

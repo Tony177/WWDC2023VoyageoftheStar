@@ -46,10 +46,10 @@ struct StarListView: View {
                                     }
                                 } label: {
                                     VStack{
-                                        Text(star.nameEng).dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .xxxLarge).bold()
+                                        Text(star.nameEng).dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large).bold()
                                         Image(star.imageName)
                                             .resizable()
-                                            .frame(width: geo.size.width > sizeLimitWidth ? 400 : 150,height: geo.size.width > sizeLimitWidth ? 400 : 150)
+                                            .frame(width: geo.size.width > sizeLimitWidth ? 350 : 150,height: geo.size.width > sizeLimitWidth ? 350 : 150)
                                             .blendMode(.screen)
                                         Spacer().frame(height: 50)
                                     }
@@ -61,34 +61,33 @@ struct StarListView: View {
                             }
                             Text("To be continued ...")
                                 .foregroundColor(.white)
-                                .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .xxxLarge)
+                                .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
                         }.padding()
-                    }.scrollIndicators(.hidden)
+                    }
+                    .scrollIndicators(.hidden)
                     VStack(alignment: .leading){
                         HStack{
                             Text("Click on any star to know more about it!")
                                 .foregroundColor(.white)
-                                .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .xxxLarge)
+                                .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
                             Spacer()
                             NavigationLink {
                                 InfoView()
                             } label: {
-                                Image(systemName: "info.circle").dynamicTypeSize(.accessibility2)
+                                Image(systemName: "info.circle").dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
                             }
-                            
                         }
                         Spacer()
                         Text("Order by")
                             .foregroundColor(.white)
-                            .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .xxxLarge)
+                            .dynamicTypeSize(geo.size.width > sizeLimitWidth ? .accessibility2 : .large)
                         Picker("order", selection: $orderBy) {
                             Text("Age").tag(0)
                             Text("Brightness").tag(1)
                             Text("Distance").tag(2)
                         }
+                        .preferredColorScheme(.dark)
                         .pickerStyle(.segmented)
-                        .dynamicTypeSize(.accessibility2)
-                        
                     }.padding()
                     Image(starClicked.imageName)
                         .resizable()
@@ -96,12 +95,12 @@ struct StarListView: View {
                         .scaleEffect(scaleEffectOn ? 1500 : 0.1)
                         .blendMode(.screen)
                     Image("rocket")
-                    .resizable(resizingMode: .stretch)
-                    .ignoresSafeArea()
-                    .offset(x: offsetValue)
+                        .resizable(resizingMode: .stretch)
+                        .ignoresSafeArea()
+                        .offset(x: offsetValue)
                 }.onAppear(){
                     if(offsetValue == 0.0){
-                        withAnimation(.linear(duration: 2)) {
+                        withAnimation(.easeIn(duration: 2)) {
                             offsetValue = geo.size.width + 100
                         }
                     }
