@@ -1,5 +1,5 @@
-![](https://img.shields.io/github/last-commit/tony177/https://github.com/Tony177/WWDC2023VoyageoftheStar)
-![](https://img.shields.io/github/repo-size/tony177/WWDC2023VoyageoftheStar)
+![](https://img.shields.io/github/last-commit/Tony177/WWDC2023VoyageoftheStar)
+![](https://img.shields.io/github/repo-size/Tony177/WWDC2023VoyageoftheStar)
 # WWDC2023 Swift Student Challenge Project
 Voyage of the Star is a project about star exploration based on age, distance and apparent magnitude (relative brightness)
 ## Limitations
